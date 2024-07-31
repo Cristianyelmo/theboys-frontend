@@ -16,18 +16,646 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+@keyframes example {
+  0% {
+    transform: translateY(0);
+   
+  }
+  50% {
+    transform: translateY(5px);
+    
+  }
+  100% {
+    transform: translateY(0px);
+ 
+  }
+}
+
+.my-element {
+ 
+  animation: example 3s infinite;
+}
+
+@keyframes example2 {
+  0% {
+   opacity: 50%
+   
+  }
+  50% {
+    opacity: 1
+    
+  }
+  100% {
+    opacity: 50%
+ 
+  }
+}
+
+.my-element2 {
+ 
+  animation: example2 3s infinite;
+}
+
+
+@keyframes example3 {
+  0% {
+    opacity: 1
+    
+   }
+   49% {
+     opacity: 1
+     
+    }
+   50% {
+     opacity: 0
+     
+   }
+   99% {
+     opacity: 0
+     
+   }
+   100% {
+     opacity: 1
+  
+   }
+}
+
+.my-element3 {
+ 
+  animation: example3 2s infinite;
+}
+
+
+@keyframes example4 {
+  0% {
+   opacity: 0
+   
+  }
+  49% {
+    opacity: 0
+    
+   }
+  50% {
+    opacity: 1
+    
+  }
+  99% {
+    opacity: 1
+    
+  }
+  100% {
+    opacity: 0
+ 
+  }
+}
+
+.my-element4 {
+ 
+  animation: example4 2s infinite;
+}
+
+
+
+.bg-cover-img {
+  background-image: url('/imagen/background.png');
+}
+
+
+
+@keyframes example5 {
+  0% {
+    transform: scale(5);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.my-element5 {
+ 
+  animation: example5 0.1s 1;
+}
+
+
+
+@keyframes example6 {
+  0% {
+    opacity: 0;
+   
+  }
+  50% {
+    opacity: 0;
+    
+  }
+  100% {
+    opacity: 1;
+ 
+  }
+}
+
+.my-element6 {
+ 
+  animation: example6 0.1s 1 forwards;
+}
+
+
+
+
+@keyframes example7 {
+  0% {
+    opacity: 1;
+   
+  }
+  50% {
+    opacity: 0;
+    
+  }
+  100% {
+    opacity: 1;
+ 
+  }
+}
+
+.my-element7 {
+ 
+  animation: example7 2s infinite;
+}
+
+
+@keyframes example8 {
+  0% {
+    opacity: 0;
+   
+  }
+
+  100% {
+    opacity: 1;
+ 
+  }
+}
+
+.my-element8 {
+ 
+  animation: example8 1s 1 forwards ;
+}
+
+
+@keyframes example9 {
+  0% {
+    opacity: 1;
+   
+  }
+
+  100% {
+    opacity: 0;
+ 
+  }
+}
+
+.my-element9 {
+ 
+  animation: example9 1s 1 forwards ;
+}
+
+
+
+
+@keyframes example10 {
+  0% {
+    opacity: 0;
+   
+  }
+  25% {
+    opacity: 50%;
+   
+  }
+
+  26% {
+    opacity: 10%;
+   
+  }
+
+  27% {
+    opacity: 25%;
+   
+  }
+
+  50% {
+    opacity: 10%;
+   
+  }
+
+  75% {
+    opacity: 25%;
+   
+  }
+
+
+
+  100% {
+    opacity: 0;
+ 
+  }
+}
+
+.my-element10 {
+ 
+  animation: example10 3s  forwards  ;
+}
+
+
+
+
+
+@keyframes example11 {
+  0% {
+    opacity: 0;
+   
+  }
+  10% {
+    opacity: 0;
+   
+  }
+  
+  15% {
+    opacity: 1;
+   
+  }
+
+  20% {
+    opacity: 0;
+   
+  }
+  50% {
+    opacity: 0;
+   
+  }
+
+  100% {
+    opacity: 0;
+ 
+  }
+}
+
+.my-element11 {
+ 
+  animation: example11 4s  forwards  ;
+}
+
+@keyframes example12 {
+  0% {
+    opacity: 0;
+   
+  }
+  10% {
+    opacity: 0;
+   
+  }
+  
+  15% {
+    opacity: 0;
+   
+  }
+
+  20% {
+    opacity: 1;
+   
+  }
+  50% {
+    opacity: 0;
+   
+  }
+
+  100% {
+    opacity: 0;
+ 
+  }
+}
+
+.my-element12 {
+ 
+  animation: example12 4s  forwards  ;
+}
+
+
+
+.z-index {
+  z-index: 500;
+}
+
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    scale: 1.5;
+  }
+  to {
+    transform: rotate(360deg);
+    scale: 1.5;
+  }
+}
+
+.spin {
+  animation: spin 4s linear infinite;
+}
+
+
+@keyframes a-train {
+  0% {
+    opacity: 1;
+   
+  }
+  
+  50% {
+    opacity: 0;
+   
+  }
+
+  100% {
+    opacity: 0;
+ 
+  }
+}
+
+.my-a-train {
+ 
+  animation: a-train 0.5s  forwards  ;
+}
+
+
+
+@keyframes a-train2 {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+ 
+  50% {
+    opacity: 1;
+    transform: translateX(150px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(150px);
+ 
+  }
+}
+
+.my-a-train2 {
+ 
+  animation: a-train2 0.5s  forwards  ;
+}
+
+
+
+
+@keyframes example13 {
+  0% {
+    opacity: 0;
+   
+  }
+  25% {
+    opacity: 100%;
+   
+  }
+
+  26% {
+    opacity: 70%;
+   
+  }
+
+  27% {
+    opacity: 90%;
+   
+  }
+
+  50% {
+    opacity: 70%;
+   
+  }
+
+  75% {
+    opacity: 90%;
+   
+  }
+
+ 
+
+  100% {
+    opacity: 0;
+ 
+  }
+}
+
+.my-element13 {
+ 
+  animation: example13 3s  forwards  ;
+}
+
+
+
+
+
+@keyframes example14 {
+  0% {
+    opacity: 0;
+   
+  }
+  10% {
+    opacity: 0;
+   
+  }
+  
+  15% {
+    opacity: 0;
+   
+  }
+
+  20% {
+    opacity: 1;
+   
+  }
+  50% {
+    opacity: 1;
+   
+  }
+
+  100% {
+    opacity: 0;
+ 
+  }
+}
+
+.my-element14 {
+ 
+  animation: example14 4s  forwards  ;
+}
+
+.opacity-butcher {
+  opacity: 1;
+}
+
+.opacity-butcher2 {
+  opacity: 0;
+}
+
+
+
+
+@keyframes example15 {
+  0% {
+    opacity: 1;
+   
+  }
+  
+
+
+  100% {
+    opacity: 0;
+ 
+  }
+}
+
+.my-element15 {
+ 
+  animation: example15 5s  forwards  ;
+}
+
+
+
+
+@keyframes example16 {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  25% {
+    opacity: 1;
+    transform: translateY(20px);
+   
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0px);
+   
+  }
+
+  75% {
+    opacity: 1;
+    transform: translateY(20px);
+   
+  }
+
+
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+ 
+  }
+}
+
+.my-element16 {
+ 
+  animation: example16 4s  forwards  ;
+}
+
+
+
+
+
+
+
+
+@keyframes example17 {
+  0% {
+    opacity: 0
+  }
+  10% {
+    opacity: 0
+  }
+
+  25% {
+    opacity: 0;
+   
+  }
+  50% {
+    opacity: 0
+   
+  }
+
+  75% {
+    opacity: 0;
+   
+  }
+
+
+  100% {
+    opacity: 1;
+ 
+  }
+}
+
+.my-element17 {
+ 
+  animation: example17 4.4s  forwards  ;
+}
+
+
+
+
+@keyframes example18 {
+  0% {
+    opacity: 0
+  }
+  10% {
+    opacity: 0
+  }
+
+  25% {
+    opacity: 0;
+   
+  }
+  50% {
+    opacity: 0
+   
+  }
+
+  75% {
+    opacity: 0;
+   
+  }
+
+  
+
+  100% {
+    opacity: 50%;
+ 
+  }
+}
+
+.my-element18 {
+ 
+  animation: example18 4.4s  forwards  ;
 }
