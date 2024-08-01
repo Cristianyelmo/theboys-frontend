@@ -205,7 +205,7 @@ if(valueselected.name == 'Stormfront'){
     className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 z-20 ${animationboolean && characterselected[valueImage].animationclick + '2'}    `}
   />
   <Image
-    src={`/imagen/fondo.webp`}
+    src={`/imagen/Fondo.webp`}
     width={1000}
     height={1000}
     className="absolute  z-10 bottom-0 w-full h-full "
