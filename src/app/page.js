@@ -9,7 +9,7 @@ import DetailCharacter from "./components/DetailCharacter";
 export default function Home() {
 const {changepage} = HomeHook()
   return (
-    <main className="bg-[#960c04] ">
+    <main className=" ">
        { changepage == 'Home' ? <HomeNew/> :  changepage == 'CharacterSelected' ?  <Characterchoice/> : <DetailCharacter/> }
     </main>
     

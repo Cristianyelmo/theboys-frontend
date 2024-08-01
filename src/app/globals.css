@@ -126,7 +126,12 @@
 
 
 .bg-cover-img {
-  background-image: url('/imagen/background.png');
+  background-image: url('/imagen/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
 }
 
 

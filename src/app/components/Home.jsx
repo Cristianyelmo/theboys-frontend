@@ -60,19 +60,19 @@ const {
           height={520}
           className="absolute  z-30 my-element2 "
         />
-        <Image
+         <Image
           src="/imagen/homelander-1.png"
           width={1000}
           height={520}
           className="absolute  z-30 my-element"
         />
         <Image
-          src="/imagen/homelander-0.png"
+          src="/imagen/homelander-0.webp"
           width={1000}
           height={520}
           className="absolute z-20 "
         />
-        <Image
+       {/*  <Image
           src="/imagen/homelander-4.png"
           width={1000}
           height={520}
@@ -83,7 +83,7 @@ const {
           width={1000}
           height={520}
           className="absolute z-10 my-element4"
-        />
+        /> */}
       </div>
 
       <div className="relative flex flex-col  top-[70%] left-[42%] z-50">
@@ -113,13 +113,13 @@ const {
         onDragOver={handleDragOver}
         onDrop={handleDrop}
       >
-        <Image
+       {/*  <Image
           src="/imagen/butcher-0.webp"
           width={300}
           height={300}
           alt="Imagen arrastrable"
           className=""
-        />
+        /> */}
       </div>
     </section>
     </div>
