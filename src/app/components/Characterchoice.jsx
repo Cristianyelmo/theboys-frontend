@@ -172,8 +172,8 @@ if(valueselected.name == 'Stormfront'){
       <div className="flex ">
       <div className="grid grid-cols-4 gap-2 w-[30%] p-4">
       {
-        characterselected.map((item)=>(
-          <div className="" onClick={()=>handleSelectedCharacter(item.id)}>
+        characterselected.map((item,index)=>(
+          <div className="" onClick={()=>handleSelectedCharacter(item.id)} key={index}>
             <Image src={`/CharacterSelected/${item.name}.png`} width={100} height={100} className={`${item.selected == true && 'border-[#2c8504] border-[4px]'} `}/>
           </div> 
 
