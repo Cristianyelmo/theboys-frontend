@@ -61,7 +61,7 @@ const {
           className="absolute  z-30 my-element2 "
         />
          <Image
-          src="/imagen/homelander-1.png"
+          src="/imagen/homelander-1.webp"
           width={1000}
           height={520}
           className="absolute  z-30 my-element"
@@ -101,8 +101,8 @@ const {
         />
       </div>
 
-      <div onClick={handleStart} className={`relative cursor-pointer flex flex-col  top-[90%] left-[42%] z-50 ${start} ${start  && 'my-element7'}`}>
-        <p className="text-white">Haz click para comenzar</p>
+      <div onClick={handleStart} className={`relative cursor-pointer flex flex-col  top-[90%] left-[39%] z-50 ${start} ${start  && 'my-element7'}`}>
+        <p className="text-white ">Haz click para comenzar</p>
       </div>
 
       <div

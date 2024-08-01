@@ -169,8 +169,9 @@ if(valueselected.name == 'Stormfront'){
     </div>  
     <div className="h-screen bg-cover-img">
     <Image src={`/imagen/thunder.png`} width={100} height={100} className={`${thunder && 'my-element12'} opacity-0  `}/>
-      <div className="flex ">
-      <div className="grid grid-cols-4 gap-2 w-[30%] p-4">
+      <div className="flex space-x-10  justify-center items-center">
+       <div className="w-[30%] h-[240px] flex flex-col space-y-2 ">
+      <div className="grid grid-cols-4 gap-2  p-2 bg-black border-[3px] border-white ">
       {
         characterselected.map((item,index)=>(
           <div className="" onClick={()=>handleSelectedCharacter(item.id)} key={index}>
@@ -180,32 +181,38 @@ if(valueselected.name == 'Stormfront'){
         ))
       }
       </div>
+      <button className={`${hidebuttonselect} text-white text-2xl text-center bg-black p-4 `} onClick={()=>handleSelectedCharacterAnimation(valueImage)}>Seleccionar</button> 
+      </div>
+
+ 
+
       <div>
 
-<p>{characterselected[valueImage].name}</p>
-<div className="w-[300px] h-[300px] border-[5px] border-black overflow-hidden relative">
+
+<div className="w-[300px] h-[300px] border-[3px] border-white overflow-hidden relative">
+  
   <Image
     src={`/CharacterSelected/${characterselected[valueImage].name}-1.webp`}
-    width={200}
+    width={480}
     height={200}
     className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 z-30   ${animationboolean && characterselected[valueImage].animationclick }  ${characterselected[valueImage].additionalanimationclick}  `}
   />
 
 <Image
     src={`/CharacterSelected/${characterselected[valueImage].name}-2.webp`}
-    width={200}
+    width={480}
     height={200}
     className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 z-20 ${animationboolean && characterselected[valueImage].animationclick + '2'}    `}
   />
   <Image
-    src={`/imagen/background-violet.gif`}
-    width={200}
-    height={200}
-    className="absolute bg-cover z-10 bottom-0 w-full h-full spin"
+    src={`/imagen/fondo.webp`}
+    width={1000}
+    height={1000}
+    className="absolute  z-10 bottom-0 w-full h-full "
   />
 </div>
-
-<button className={`${hidebuttonselect}`} onClick={()=>handleSelectedCharacterAnimation(valueImage)}>seleccionar a {characterselected[valueImage].name}</button>
+<p className="text-white text-3xl text-center mt-2">{characterselected[valueImage].name}</p>
+{/* <button className={`${hidebuttonselect}`} onClick={()=>handleSelectedCharacterAnimation(valueImage)}>seleccionar a {characterselected[valueImage].name}</button> */}
 </div>
       </div>
 
