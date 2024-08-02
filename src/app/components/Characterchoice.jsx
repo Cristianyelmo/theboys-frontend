@@ -173,9 +173,9 @@ if(valueselected.name == 'Stormfront'){
        
        <div className="flex flex-col items-center">
 
-
+      
 <div className="w-[300px] h-[300px] border-[3px] border-white overflow-hidden relative">
-  
+  <Image src={`/imagen/thunder.png`} width={100} height={100} className={`${thunder && 'my-element12'} opacity-0 absolute z-40 `}/>
   <Image
     src={`/CharacterSelected/${characterselected[valueImage].name}1.webp`}
     width={480}
