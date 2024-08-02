@@ -10,7 +10,7 @@ export default function Home() {
 const {changepage} = HomeHook()
   return (
     <main className=" ">
-       { changepage == 'Home' ? <HomeNew/> :  changepage == 'CharacterSelected' ?  <Characterchoice/> : <DetailCharacter/> }
+       {  changepage == 'Home' ? <HomeNew/> :  changepage == 'CharacterSelected' ?  <Characterchoice/> :   <DetailCharacter/> }
     </main>
     
        

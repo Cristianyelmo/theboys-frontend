@@ -667,3 +667,143 @@
  
   animation: example18 4.4s  forwards  ;
 }
+
+
+
+
+
+@keyframes toggleserieandcomic1 {
+  0% {
+    opacity: 0
+  }
+  25% {
+    opacity: 0;
+   
+  }
+  50% {
+    opacity: 0
+   
+  }
+  100% {
+    opacity: 0;
+ 
+  }
+}
+
+.toggleserieandcomic1 {
+ 
+  animation: toggleserieandcomic1 0.3s  forwards  ;
+}
+
+
+
+@keyframes toggleserieandcomic2 {
+  0% {
+    opacity: 0
+  }
+  25% {
+    opacity: 1;
+   
+  }
+  50% {
+    opacity: 0
+   
+  }
+  100% {
+    opacity: 0;
+ 
+  }
+}
+
+.toggleserieandcomic2 {
+ 
+  animation: toggleserieandcomic2 0.3s  forwards  ;
+}
+
+
+
+@keyframes toggleserieandcomic3 {
+  0% {
+    opacity: 0
+  }
+  25% {
+    opacity: 0;
+   
+  }
+  50% {
+    opacity: 1
+   
+  }
+  100% {
+    opacity: 0;
+ 
+  }
+}
+
+.toggleserieandcomic3 {
+ 
+  animation: toggleserieandcomic3 0.3s  forwards  ;
+}
+
+
+
+@keyframes toggleserieandcomic4 {
+  0% {
+    opacity: 0
+  }
+  25% {
+    opacity: 0;
+   
+  }
+  50% {
+    opacity: 0
+   
+  }
+  100% {
+    opacity: 1;
+ 
+  }
+}
+
+.toggleserieandcomic4 {
+ 
+  animation: toggleserieandcomic4 0.3s  forwards  ;
+}
+
+
+
+
+.text-outline {
+ 
+  color: transparent; /* Hace el texto transparente */
+  -webkit-text-stroke: 0.5px white; /* Ancho y color del borde */
+  text-stroke: 0.5px white; /* Soporte para otros navegadores */
+}
+
+
+
+@keyframes blood {
+  0% {
+opacity: 0;
+    transform:scale(5);
+    
+  }
+  50% {
+    opacity: 1;
+    transform:scale(1);
+    
+  }
+
+  
+  100% {
+    opacity: 1;
+    transform:scale(1);
+    
+ 
+  }
+}
+
+.blood {
+ 
+  animation: blood 2s  forwards  ;
+}
