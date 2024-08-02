@@ -177,14 +177,14 @@ if(valueselected.name == 'Stormfront'){
 <div className="w-[300px] h-[300px] border-[3px] border-white overflow-hidden relative">
   
   <Image
-    src={`/CharacterSelected/${characterselected[valueImage].name}-1.webp`}
+    src={`/CharacterSelected/${characterselected[valueImage].name}1.webp`}
     width={480}
     height={200}
     className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 z-30  ${characterselected[valueImage].additionalanimationclick}   ${animationboolean && characterselected[valueImage].animationclick }    `}
   />
 
 <Image
-    src={`/CharacterSelected/${characterselected[valueImage].name}-2.webp`}
+    src={`/CharacterSelected/${characterselected[valueImage].name}2.webp`}
     width={480}
     height={200}
     className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 z-20 ${animationboolean && characterselected[valueImage].animationclick + '2'}    `}
