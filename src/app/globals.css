@@ -512,6 +512,9 @@
  
   animation: example14 4s  forwards  ;
 }
+.opacity-butchernew {
+  opacity: 1;
+}
 
 .opacity-butcher {
   opacity: 1;

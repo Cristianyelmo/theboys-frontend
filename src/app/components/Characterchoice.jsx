@@ -39,7 +39,7 @@ const [characterselected ,setCharacterSelected]=useState([
     audio:'butcher',
     timechangepage:1200,
     animationbackground:'hidden',
-    animationclick:'opacity-butcher',
+    animationclick:'opacity-butchernew',
     additionalanimationclick:'opacity-0'
   },
   {
@@ -195,7 +195,7 @@ if(valueselected.name == 'Stormfront'){
     src={`/CharacterSelected/${characterselected[valueImage].name}-1.webp`}
     width={480}
     height={200}
-    className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 z-30   ${animationboolean && characterselected[valueImage].animationclick }  ${characterselected[valueImage].additionalanimationclick}  `}
+    className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 z-30  ${characterselected[valueImage].additionalanimationclick}   ${animationboolean && characterselected[valueImage].animationclick }    `}
   />
 
 <Image
