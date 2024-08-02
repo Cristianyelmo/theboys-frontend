@@ -167,26 +167,11 @@ if(valueselected.name == 'Stormfront'){
      
 
     </div>  
-    <div className="h-screen bg-cover-img">
-    <Image src={`/imagen/thunder.png`} width={100} height={100} className={`${thunder && 'my-element12'} opacity-0  `}/>
-      <div className="flex space-x-10  justify-center items-center">
-       <div className="w-[30%] h-[240px] flex flex-col space-y-2 ">
-      <div className="grid grid-cols-4 gap-2  p-2 bg-black border-[3px] border-white ">
-      {
-        characterselected.map((item,index)=>(
-          <div className="" onClick={()=>handleSelectedCharacter(item.id)} key={index}>
-            <Image src={`/CharacterSelected/${item.name}.png`} width={100} height={100} className={`${item.selected == true && 'border-[#2c8504] border-[4px]'} `}/>
-          </div> 
-
-        ))
-      }
-      </div>
-      <button className={`${hidebuttonselect} text-white text-2xl text-center bg-black p-4 `} onClick={()=>handleSelectedCharacterAnimation(valueImage)}>Seleccionar</button> 
-      </div>
-
- 
-
-      <div>
+    <div className=" bg-cover-img p-3">
+    {/* <Image src={`/imagen/thunder.png`} width={100} height={100} className={`${thunder && 'my-element12'} opacity-0  `}/> */}
+      <div className="flex flex-col  justify-center items-center">
+       
+       <div className="flex flex-col items-center">
 
 
 <div className="w-[300px] h-[300px] border-[3px] border-white overflow-hidden relative">
@@ -212,8 +197,25 @@ if(valueselected.name == 'Stormfront'){
   />
 </div>
 <p className="text-white text-3xl text-center mt-2">{characterselected[valueImage].name}</p>
-{/* <button className={`${hidebuttonselect}`} onClick={()=>handleSelectedCharacterAnimation(valueImage)}>seleccionar a {characterselected[valueImage].name}</button> */}
+
 </div>
+<div className="flex flex-col items-center space-y-2">
+      <div className="grid grid-cols-4 gap-2  p-2 bg-black border-[3px] border-white ">
+      {
+        characterselected.map((item,index)=>(
+          <div className="" onClick={()=>handleSelectedCharacter(item.id)} key={index}>
+            <Image src={`/CharacterSelected/${item.name}.png`} width={100} height={100} className={`${item.selected == true && 'border-[#2c8504] border-[4px]'} `}/>
+          </div> 
+
+        ))
+      }
+      </div>
+      <button className={`${hidebuttonselect} text-white text-2xl text-center bg-black p-4 `} onClick={()=>handleSelectedCharacterAnimation(valueImage)}>Seleccionar</button> 
+      </div>
+     
+ 
+
+    
       </div>
 
     </div>
