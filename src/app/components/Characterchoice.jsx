@@ -128,7 +128,7 @@ const[hidebuttonselect,setHidebuttonselect]=useState('')
 const handleSelectedCharacterAnimation = (id) => {
   setAnimationboolean(true)
   setBlockselected(true)
-  setHidebuttonselect('hidden')
+  setHidebuttonselect('opacity-0')
   const valueselected = characterselected[id]
   const audio = new Audio(`/sound/${valueselected.audio}.mp3`);
   audio.play();
@@ -167,9 +167,9 @@ if(valueselected.name == 'Stormfront'){
      
 
     </div>  
-    <div className=" bg-cover-img p-3">
+    <div className=" bg-cover-img p-3 lg:flex lg:justify-center ">
     {/* <Image src={`/imagen/thunder.png`} width={100} height={100} className={`${thunder && 'my-element12'} opacity-0  `}/> */}
-      <div className="flex flex-col  justify-center items-center">
+      <div className="flex flex-col lg:flex-row lg:space-x-10  justify-center items-center">
        
        <div className="flex flex-col items-center">
 
@@ -210,7 +210,7 @@ if(valueselected.name == 'Stormfront'){
         ))
       }
       </div>
-      <button className={`${hidebuttonselect} text-white text-2xl text-center bg-black p-4 `} onClick={()=>handleSelectedCharacterAnimation(valueImage)}>Seleccionar</button> 
+      <button disabled={hidebuttonselect == 'opacity-0' && true} className={`${hidebuttonselect} text-white text-2xl text-center bg-black p-4 `} onClick={()=>handleSelectedCharacterAnimation(valueImage)}>Seleccionar</button> 
       </div>
      
  
