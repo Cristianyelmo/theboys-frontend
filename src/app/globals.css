@@ -776,8 +776,8 @@
 .text-outline {
  
   color: transparent; /* Hace el texto transparente */
-  -webkit-text-stroke: 0.5px white; /* Ancho y color del borde */
-  text-stroke: 0.5px white; /* Soporte para otros navegadores */
+  -webkit-text-stroke: 0.9px white; /* Ancho y color del borde */
+  text-stroke: 0.9px white; /* Soporte para otros navegadores */
 }
 
 

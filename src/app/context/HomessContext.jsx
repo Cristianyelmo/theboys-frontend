@@ -34,6 +34,91 @@ const [start,setStar] = useState('hidden')
   
   };
 
+
+  const [characterselected ,setCharacterSelected]=useState([
+    {
+      id:0,
+      name:'A-Train',
+      selected:true,
+      audio:'a-train',
+      timechangepage:2000,
+      animationbackground:'hidden',
+      animationclick:'my-a-train',
+     additionalanimationclick:''
+    },
+    {
+      id:1,
+      name:'Billy Butcher',
+      selected:false,
+      audio:'butcher',
+      timechangepage:1200,
+      animationbackground:'hidden',
+      animationclick:'opacity-butchernew',
+      additionalanimationclick:'opacity-0'
+    },
+    {
+      id:2,
+      name:'Black Noir',
+      selected:false,
+      audio:'blacknoir',
+      timechangepage:4000,
+      animationbackground:'hidden ',
+      animationclick:'my-element16',
+      additionalanimationclick:'opacity-0'
+    },
+    {
+      id:3,
+      name:'Homelander',
+      selected:false,
+      audio:'onlyman',
+      timechangepage:5000,
+      animationbackground:'my-element18 block z-50',
+      animationclick:'my-element17',
+      additionalanimationclick:'opacity-0'
+    },
+    {
+      id:4,
+      name:'Kimiko',
+      selected:false,
+      audio:'kimiko',
+      timechangepage:4000,
+      animationbackground:'hidden ',
+      animationclick:'my-element15',
+      additionalanimationclick:''
+    },
+    {
+      id:5,
+      name:'Queen Maeve',
+      selected:false,
+      audio:'queenmeave',
+      timechangepage:2000,
+      animationbackground:'hidden ',
+      animationclick:'opacity-butcher',
+      additionalanimationclick:'opacity-0'
+    },
+    {
+      id:6,
+      name:'Stormfront',
+      selected:false,
+      audio:'stormfront',
+      timechangepage:4000,
+      animationbackground:'my-element11 block bg-white',
+      animationclick:'my-element14',
+      additionalanimationclick:'opacity-0'
+    },
+    {
+      id:7,
+      name:'Starlight',
+      selected:false,
+      audio:'starlight',
+      timechangepage:4000,
+      animationbackground:'my-element10 block bg-black',
+      animationclick:' block my-element13',
+      additionalanimationclick:'opacity-0'
+    }
+  
+  ])
+  const[valueImage,setValueImage]=useState(0)
   return (
     <HomeContext.Provider
       value={{
@@ -42,7 +127,9 @@ const [start,setStar] = useState('hidden')
         handleStart,
         changepage,
         setChangepage,
-        start,setStar
+        start,setStar,
+        characterselected ,setCharacterSelected,
+        valueImage,setValueImage
       }}
     >
       {children}
