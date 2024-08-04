@@ -107,7 +107,7 @@ setObjectanimationserieandcomic({
 </div>
  
 <div className="lg:px-10 p-2 space-y-10 flex flex-col items-center lg:items-start">
-<div className="relative   mt-10">
+<div className="relative  ">
 <p className="text-white text-4xl lg:text-6xl fontanimationx">{characterselected[valueImage].name}</p>
 <p className="text-white text-4xl lg:text-6xl fontanimationx2">{characterselected[valueImage].name}</p>
 <p className="text-white text-4xl lg:text-6xl text-outline relative bottom-0 left-0 z-30 fontanimationx3">{characterselected[valueImage].name}</p>
