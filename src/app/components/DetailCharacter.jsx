@@ -40,13 +40,19 @@ const[objectanimationserieandcomic,setObjectanimationserieandcomic]=useState({
      animation4:''
 })
 const[textchange,setTextChange]=useState('textserie')
-const[animatefont,setAninamefont]=useState('')
+const[animatefont,setAninamefont]=useState({
+  font1:'',
+  font2:'opacity-0'
+})
 const handleChangecomicandserie = (value)=>{
   setChoiceseriesandcomic(value)
   const audio2 = new Audio('/sound/glith.mp3');
       audio2.play();
       if(value == 'comic'){
-        setAninamefont('fontanimate')
+        setAninamefont({
+          font1:'fontanimate',
+          font2:'fontanimatered'
+        })
         setTextChange('textcomic')
 setObjectanimationserieandcomic({
   animation1:'toggleserieandcomic1',
@@ -55,7 +61,10 @@ setObjectanimationserieandcomic({
      animation4:'toggleserieandcomic4'
 })
 } else{
-  setAninamefont('fontanimate2')
+  setAninamefont({
+    font1:'fontanimate2',
+    font2:'fontanimatered2'
+  })
   setTextChange('textserie')
   setObjectanimationserieandcomic({
     animation1:'toggleserieandcomic4',
@@ -77,7 +86,7 @@ setObjectanimationserieandcomic({
 
     </div> 
     <div className="w-full h-full overflow-hidden">
-    <button onClick={()=>setChangepage('CharacterSelected')}>
+    <button onClick={()=>setChangepage('CharacterSelected')} className="bg-black p-2 m-2 text-white">
       volver
    
     </button>
@@ -99,16 +108,21 @@ setObjectanimationserieandcomic({
  
 <div className="lg:px-10 p-2 space-y-10 flex flex-col items-center lg:items-start">
 <div className="relative   mt-10">
-<p className="text-white text-4xl lg:text-6xl">{characterselected[valueImage].name}</p>
-<p className="text-white text-4xl lg:text-6xl">{characterselected[valueImage].name}</p>
-<p className="text-white text-4xl lg:text-6xl text-outline relative bottom-0 left-0 z-30">{characterselected[valueImage].name}</p>
+<p className="text-white text-4xl lg:text-6xl fontanimationx">{characterselected[valueImage].name}</p>
+<p className="text-white text-4xl lg:text-6xl fontanimationx2">{characterselected[valueImage].name}</p>
+<p className="text-white text-4xl lg:text-6xl text-outline relative bottom-0 left-0 z-30 fontanimationx3">{characterselected[valueImage].name}</p>
 
 <Image src="/imagen/bloodanimation.webp"  width={200} height={700} className="absolute bottom-0 right-0 bloodanimation z-10"/>
 <Image src="/imagen/bloodanimation2.webp"  width={200} height={700} className="absolute bottom-0 right-0 bloodanimation2 z-30"/>
 <Image src="/imagen/bloodanimation3.webp"  width={200} height={700} className="absolute bottom-0 right-0 bloodanimation2 z-30"/>
 </div>
-<div className={`${animatefont}`}>
-<p className={`text-white  text-xl lg:w-[50%]     ${TheboysFonts.className}`}>{characterselected[valueImage][textchange]}
+<div className={`${animatefont.font1} relative`}>
+{ <p className={`text-white  text-xl lg:w-[50%] absolute ml-4    ${TheboysFonts.className}`}>{characterselected[valueImage][textchange]}</p> }
+<p className={`text-[#d00303] ${animatefont.font2} absolute ml-5 text-xl lg:w-[50%]    ${TheboysFonts.className}`}>{characterselected[valueImage][textchange]}
+</p>
+
+
+<p className={`text-[#04c1ff] ${animatefont.font2}  text-xl lg:w-[50%]    ${TheboysFonts.className}`}>{characterselected[valueImage][textchange]}
 </p>
 </div>
 </div>
