@@ -44,7 +44,7 @@ const [start,setStar] = useState('hidden')
       timechangepage:2000,
       animationbackground:'hidden',
       animationclick:'my-a-train',
-     additionalanimationclick:''
+     additionalanimationclick:'opacity-1'
     },
     {
       id:1,
@@ -84,7 +84,7 @@ const [start,setStar] = useState('hidden')
       timechangepage:4000,
       animationbackground:'hidden ',
       animationclick:'my-element15',
-      additionalanimationclick:''
+      additionalanimationclick:'opacity-1'
     },
     {
       id:5,
