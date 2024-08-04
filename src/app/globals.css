@@ -131,7 +131,7 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh; 
 }
 
 
@@ -806,4 +806,137 @@ opacity: 0;
 .blood {
  
   animation: blood 2s  forwards  ;
+}
+
+
+
+
+@keyframes fontanimate {
+  0% {
+
+    transform:scale(1.2);
+ 
+  }
+  49% {
+
+    transform:scale(1.2);
+    
+  }
+  50% {
+  
+    transform:scale(1);
+
+  }
+  
+  99% {
+  
+    transform:scale(1);
+   
+  }
+  
+  100% {
+    
+    transform:scale(1);
+ 
+ 
+  }
+}
+
+@keyframes fontanimate2 {
+  0% {
+
+    transform:scale(1.2);
+    
+  }
+  49% {
+
+    transform:scale(1.2);
+    
+  }
+  50% {
+  
+    transform:scale(1);
+   
+  }
+  99% {
+  
+    transform:scale(1);
+   
+  }
+  
+  100% {
+    
+    transform:scale(1);
+ 
+ 
+  }
+}
+.fontanimate {
+ 
+  animation: fontanimate 0.3s forwards  ;
+}
+.fontanimate2 {
+ 
+  animation: fontanimate2 0.3s forwards  ;
+}
+
+
+.prueba-font {
+  font-family: var(--font-airamericana);
+}
+
+
+
+@keyframes bloodanimation {
+  0% {
+
+    transform:scale(2);
+    
+  }
+  
+  50% {
+  
+    transform:scale(1);
+   
+  }
+  
+  
+  100% {
+    
+    transform:scale(1);
+ 
+ 
+  }
+}
+.bloodanimation {
+ 
+  animation: bloodanimation 3s forwards  ;
+}
+
+
+@keyframes bloodanimation2 {
+  0% {
+
+    transform:scale(3);
+    opacity: 1;
+  }
+  
+  50% {
+  
+    transform:scale(1);
+    opacity: 1;
+  }
+  
+  
+  100% {
+    
+    transform:scale(1);
+    opacity: 1;
+ 
+  }
+}
+.bloodanimation2 {
+ 
+  animation: bloodanimation2 3.5s forwards  ;
+  transform-origin: center;
 }

@@ -2,11 +2,21 @@
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { HomeHook } from "../context/HomessContext";
-
+import localFont from "next/font/local";
+const TheboysFonts = localFont({
+  src: [
+    {
+      path: "../../../public/fonts/airamericanademo-semibold.woff",
+      weight: "400",
+   
+    },
+   
+  ],
+});
 export default function DetailCharacter() {
   const {setChangepage,characterselected,valueImage} =HomeHook()
     const[valueclass,setValueclass]=useState('my-element9 block')
-  
+ 
     useEffect(() => {
      
      /*  const audio2 = new Audio('/sound/mk.mp3');
@@ -29,13 +39,15 @@ const[objectanimationserieandcomic,setObjectanimationserieandcomic]=useState({
     animation3:'',
      animation4:''
 })
-
-
+const[textchange,setTextChange]=useState('textserie')
+const[animatefont,setAninamefont]=useState('')
 const handleChangecomicandserie = (value)=>{
   setChoiceseriesandcomic(value)
   const audio2 = new Audio('/sound/glith.mp3');
       audio2.play();
       if(value == 'comic'){
+        setAninamefont('fontanimate')
+        setTextChange('textcomic')
 setObjectanimationserieandcomic({
   animation1:'toggleserieandcomic1',
    animation2:'toggleserieandcomic2',
@@ -43,6 +55,8 @@ setObjectanimationserieandcomic({
      animation4:'toggleserieandcomic4'
 })
 } else{
+  setAninamefont('fontanimate2')
+  setTextChange('textserie')
   setObjectanimationserieandcomic({
     animation1:'toggleserieandcomic4',
      animation2:'toggleserieandcomic3',
@@ -62,7 +76,7 @@ setObjectanimationserieandcomic({
      
 
     </div> 
-    <div className="w-full h-full">
+    <div className="w-full h-full overflow-hidden">
     <button onClick={()=>setChangepage('CharacterSelected')}>
       volver
    
@@ -83,17 +97,19 @@ setObjectanimationserieandcomic({
 </div>
 </div>
  
-<div className="lg:p-10 p-2 space-y-10 flex flex-col items-center lg:items-start">
-<div className="relative  lg:order-2 ">
+<div className="lg:px-10 p-2 space-y-10 flex flex-col items-center lg:items-start">
+<div className="relative   mt-10">
 <p className="text-white text-4xl lg:text-6xl">{characterselected[valueImage].name}</p>
 <p className="text-white text-4xl lg:text-6xl">{characterselected[valueImage].name}</p>
 <p className="text-white text-4xl lg:text-6xl text-outline relative bottom-0 left-0 z-30">{characterselected[valueImage].name}</p>
 
-<Image src="/imagen/bloostest3.webp"  width={700} height={700} className="absolute bottom-0 left-0 z-10"/>
-
+<Image src="/imagen/bloodanimation.webp"  width={200} height={700} className="absolute bottom-0 right-0 bloodanimation z-10"/>
+<Image src="/imagen/bloodanimation2.webp"  width={200} height={700} className="absolute bottom-0 right-0 bloodanimation2 z-30"/>
+<Image src="/imagen/bloodanimation3.webp"  width={200} height={700} className="absolute bottom-0 right-0 bloodanimation2 z-30"/>
 </div>
-<div>
-<p className="text-white text-sm lg:w-[60%]   lg:order-1 ">Homelander es el mejor de los superhéroes existentes y el líder de The Seven. Además de volar, tiene una fuerza sobrehumana y un oído portentoso. Su visión de rayos X puede traspasar prácticamente cualquier material y destruirlo con la precisión de un láser. Aparentemente es una persona amable, sincera y modesta, siempre dispuesto a ayudar, todo un patriota norteamericano temeroso de Dios. Pero al igual que los simples mortales, los superhéroes tienen secretos, pero en el caso de Homelander, son demasiado oscuros. Estos secretos, lo terminan enfrentando con Billy Butcher.</p>
+<div className={`${animatefont}`}>
+<p className={`text-white  text-xl lg:w-[50%]     ${TheboysFonts.className}`}>{characterselected[valueImage][textchange]}
+</p>
 </div>
 </div>
 </div>

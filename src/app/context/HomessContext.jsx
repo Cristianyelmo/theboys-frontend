@@ -44,7 +44,9 @@ const [start,setStar] = useState('hidden')
       timechangepage:2000,
       animationbackground:'hidden',
       animationclick:'my-a-train',
-     additionalanimationclick:'opacity-1'
+     additionalanimationclick:'opacity-1',
+     textcomic:'En la adaptación de Amazon Prime Video, el personaje de Homelander, interpretado por Antony Starr, sigue siendo el líder de los Siete, pero su carácter y sus motivaciones están un poco suavizados en comparación con los cómics. Aunque sigue siendo un villano, sus acciones y motivaciones se exploran con más matices para ajustarse a una narrativa más dramática y menos explícita.',
+      textserie:' Homelander es presentado como el líder de los Siete, un grupo de superhéroes muy corruptos. Su carácter es extremadamente egocéntrico, violento y despiadado. Su historia de fondo incluye experimentos realizados por Vought-America, que le otorgan sus habilidades. En los cómics, Homelander tiene una serie de actos aún más atroces y despiadados en comparación con la serie de televisión.'
     },
     {
       id:1,
@@ -54,7 +56,9 @@ const [start,setStar] = useState('hidden')
       timechangepage:1200,
       animationbackground:'hidden',
       animationclick:'opacity-butchernew',
-      additionalanimationclick:'opacity-0'
+      additionalanimationclick:'opacity-0',
+      textcomic:'',
+       textserie:''
     },
     {
       id:2,
@@ -64,7 +68,9 @@ const [start,setStar] = useState('hidden')
       timechangepage:4000,
       animationbackground:'hidden ',
       animationclick:'my-element16',
-      additionalanimationclick:'opacity-0'
+      additionalanimationclick:'opacity-0',
+      textcomic:'',
+       textserie:''
     },
     {
       id:3,
@@ -74,7 +80,9 @@ const [start,setStar] = useState('hidden')
       timechangepage:5000,
       animationbackground:'my-element18 block z-50',
       animationclick:'my-element17',
-      additionalanimationclick:'opacity-0'
+      additionalanimationclick:'opacity-0',
+    textcomic:'En la adaptación de Amazon Prime Video, el personaje de Homelander, interpretado por Antony Starr, sigue siendo el líder de los Siete, pero su carácter y sus motivaciones están un poco suavizados en comparación con los cómics. Aunque sigue siendo un villano, sus acciones y motivaciones se exploran con más matices para ajustarse a una narrativa más dramática y menos explícita.',
+      textserie:' Homelander es presentado como el líder de los Siete, un grupo de superhéroes muy corruptos. Su carácter es extremadamente egocéntrico, violento y despiadado. Su historia de fondo incluye experimentos realizados por Vought-America, que le otorgan sus habilidades. En los cómics, Homelander tiene una serie de actos aún más atroces y despiadados en comparación con la serie de televisión.'
     },
     {
       id:4,
@@ -84,7 +92,9 @@ const [start,setStar] = useState('hidden')
       timechangepage:4000,
       animationbackground:'hidden ',
       animationclick:'my-element15',
-      additionalanimationclick:'opacity-1'
+      additionalanimationclick:'opacity-1',
+      textcomic:'',
+      textserie:''
     },
     {
       id:5,
@@ -94,7 +104,9 @@ const [start,setStar] = useState('hidden')
       timechangepage:2000,
       animationbackground:'hidden ',
       animationclick:'opacity-butcher',
-      additionalanimationclick:'opacity-0'
+      additionalanimationclick:'opacity-0',
+      textcomic:'',
+      textserie:''
     },
     {
       id:6,
@@ -104,7 +116,9 @@ const [start,setStar] = useState('hidden')
       timechangepage:4000,
       animationbackground:'my-element11 block bg-white',
       animationclick:'my-element14',
-      additionalanimationclick:'opacity-0'
+      additionalanimationclick:'opacity-0',
+      textcomic:'',
+      textserie:''
     },
     {
       id:7,
@@ -114,7 +128,9 @@ const [start,setStar] = useState('hidden')
       timechangepage:4000,
       animationbackground:'my-element10 block bg-black',
       animationclick:' block my-element13',
-      additionalanimationclick:'opacity-0'
+      additionalanimationclick:'opacity-0',
+      textcomic:'',
+      textserie:''
     }
   
   ])
