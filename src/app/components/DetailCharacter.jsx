@@ -98,11 +98,11 @@ setObjectanimationserieandcomic({
 
 <div className="flex flex-col ">
 <div className="transform -translate-x-1/2  flex justify-center lg:absolute lg:bottom-0 lg:right-0 lg:-translate-x-0">
-<div className="relative ">
-<Image src={`/DetailSelected/background-4.webp`} width={1200} height={800} className={`absolute  opacity-0  ${objectanimationserieandcomic.animation4}`}/>
-<Image src={`/DetailSelected/background-3.webp`} width={1200} height={800} className={`absolute  opacity-0 ${objectanimationserieandcomic.animation3}`}/>
-<Image src={`/DetailSelected/background-2.webp`} width={1200} height={800} className={`absolute  opacity-0 ${objectanimationserieandcomic.animation2}`}/>
-<Image src={`/DetailSelected/background-1.webp`} width={1200} height={800} className={`  ${objectanimationserieandcomic.animation1}`}/>
+<div className="relative  ">
+<Image src={`/DetailSelected/${characterselected[valueImage].name}4.webp`} width={1200} height={800} className={`absolute   opacity-0  ${objectanimationserieandcomic.animation4}`}/>
+<Image src={`/DetailSelected/${characterselected[valueImage].name}3.webp`} width={1200} height={800} className={`absolute  opacity-0 ${objectanimationserieandcomic.animation3}`}/>
+<Image src={`/DetailSelected/${characterselected[valueImage].name}2.webp`} width={1200} height={800} className={`absolute  opacity-0 ${objectanimationserieandcomic.animation2}`}/>
+<Image src={`/DetailSelected/${characterselected[valueImage].name}.webp`} width={1200} height={800} className={`   ${objectanimationserieandcomic.animation1}`}/>
 </div>
 </div>
  
@@ -117,12 +117,12 @@ setObjectanimationserieandcomic({
 <Image src="/imagen/bloodanimation3.webp"  width={200} height={700} className="absolute bottom-0 right-0 bloodanimation2 z-30"/>
 </div>
 <div className={`${animatefont.font1} relative`}>
-{ <p className={`text-white  text-xl lg:w-[50%] absolute ml-4    ${TheboysFonts.className}`}>{characterselected[valueImage][textchange]}</p> }
-<p className={`text-[#d00303] ${animatefont.font2} absolute ml-5 text-xl lg:w-[50%]    ${TheboysFonts.className}`}>{characterselected[valueImage][textchange]}
+{ <p className={`text-white  text-xl lg:w-[50%] absolute    ${TheboysFonts.className}`}>{characterselected[valueImage][textchange]}</p> }
+<p className={`text-[#d00303] ${animatefont.font2} mr-5 absolute  text-xl lg:w-[50%]    ${TheboysFonts.className}`}>{characterselected[valueImage][textchange]}
 </p>
 
 
-<p className={`text-[#04c1ff] ${animatefont.font2}  text-xl lg:w-[50%]    ${TheboysFonts.className}`}>{characterselected[valueImage][textchange]}
+<p className={`text-[#04c1ff] ${animatefont.font2} ml-5  text-xl lg:w-[50%]    ${TheboysFonts.className}`}>{characterselected[valueImage][textchange]}
 </p>
 </div>
 </div>
