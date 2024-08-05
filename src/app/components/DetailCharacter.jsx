@@ -6,8 +6,8 @@ import localFont from "next/font/local";
 const TheboysFonts = localFont({
   src: [
     {
-      path: "../../../public/fonts/airamericanademo-semibold.woff",
-      weight: "400",
+      path: "../../../public/fonts/Marvelo.ttf",
+     
    
     },
    
@@ -117,12 +117,12 @@ setObjectanimationserieandcomic({
 <Image src="/imagen/bloodanimation3.webp"  width={200} height={700} className="absolute bottom-0 right-0 bloodanimation2 z-30"/>
 </div>
 <div className={`${animatefont.font1} relative`}>
-{ <p className={`text-white  text-xl lg:w-[50%] absolute    ${TheboysFonts.className}`}>{characterselected[valueImage][textchange]}</p> }
-<p className={`text-[#d00303] ${animatefont.font2} mr-5 absolute  text-xl lg:w-[50%]    ${TheboysFonts.className}`}>{characterselected[valueImage][textchange]}
+{ <p className={`text-white  text-4xl lg:w-[50%] absolute    ${TheboysFonts.className}`}>{characterselected[valueImage][textchange]}</p> }
+<p className={`text-[#d00303] ${animatefont.font2} mr-5 absolute  text-4xl lg:w-[50%]    ${TheboysFonts.className}`}>{characterselected[valueImage][textchange]}
 </p>
 
 
-<p className={`text-[#04c1ff] ${animatefont.font2} ml-5  text-xl lg:w-[50%]    ${TheboysFonts.className}`}>{characterselected[valueImage][textchange]}
+<p className={`text-[#04c1ff] ${animatefont.font2} ml-5  text-4xl lg:w-[50%]    ${TheboysFonts.className}`}>{characterselected[valueImage][textchange]}
 </p>
 </div>
 </div>
