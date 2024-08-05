@@ -5,8 +5,10 @@ import { HomeHook } from "../context/HomessContext";
 
 export default function Characterchoice() {
   
-  const[valueclass,setValueclass]=useState('my-element9 block')
-  
+  const[valueclass,setValueclass]=useState('my-element9 bg-black')
+  const { 
+    handleStart,darkness, setChangepage, characterselected ,setCharacterSelected,
+    valueImage,setValueImage}= HomeHook()
   useEffect(() => {
    
    /*  const audio2 = new Audio('/sound/mk.mp3');
@@ -19,9 +21,7 @@ export default function Characterchoice() {
     
   }, []);
   
-const { 
-  handleStart,darkness, setChangepage, characterselected ,setCharacterSelected,
-  valueImage,setValueImage}= HomeHook()
+
 
   const[thunder,setThunder]=useState(false)
 const[blockselected,setBlockselected]=useState(false)
@@ -82,7 +82,7 @@ if(valueselected.name == 'Stormfront'){
 
 
 
-     <div className={`fixed inset-0 bg-black z-index ${valueclass}`}>
+     <div className={`fixed inset-0  z-index ${valueclass}`}>
      
 
     </div>  
@@ -99,7 +99,7 @@ if(valueselected.name == 'Stormfront'){
     src={`/CharacterSelected/${characterselected[valueImage].name}1.webp`}
     width={480}
     height={200}
-    className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 z-30  ${characterselected[valueImage].additionalanimationclick}   ${animationboolean && characterselected[valueImage].animationclick }    `}
+    className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 z-30   ${characterselected[valueImage].additionalanimationclick}   ${animationboolean && characterselected[valueImage].animationclick }  `}
   />
 
 <Image

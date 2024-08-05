@@ -27,7 +27,7 @@ export default function DetailCharacter() {
         }, 1000);
         return () => clearTimeout(timer);
       
-    }, []);
+    }, [characterselected]);
 
 
 const [choiceseriesandcomic,setChoiceseriesandcomic] = useState('serie')

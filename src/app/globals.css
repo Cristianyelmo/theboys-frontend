@@ -279,7 +279,8 @@
 }
 
 .my-element10 {
- 
+  display: block;
+  background-color: black;
   animation: example10 3s  forwards  ;
 }
 
@@ -318,7 +319,8 @@
 }
 
 .my-element11 {
- 
+  display: block;
+ background-color: white;
   animation: example11 4s  forwards  ;
 }
 
@@ -470,7 +472,8 @@
 }
 
 .my-element13 {
- 
+  display: block;
+
   animation: example13 3s  forwards  ;
 }
 
@@ -509,19 +512,19 @@
 }
 
 .my-element14 {
- 
+display: block;
   animation: example14 4s  forwards  ;
 }
 .opacity-butchernew {
-  opacity: 1;
+  display: block;
 }
 
 .opacity-butcher {
-  opacity: 1;
+  display: block;
 }
 
 .opacity-butcher2 {
-  opacity: 0;
+  display: none;
 }
 
 
@@ -585,7 +588,7 @@
 }
 
 .my-element16 {
- 
+ display: block;
   animation: example16 4s  forwards  ;
 }
 
@@ -626,7 +629,7 @@
 }
 
 .my-element17 {
- 
+ display: block;
   animation: example17 4.4s  forwards  ;
 }
 
@@ -664,6 +667,8 @@
 }
 
 .my-element18 {
+  display: block;
+ background-color: black;
  
   animation: example18 4.4s  forwards  ;
 }

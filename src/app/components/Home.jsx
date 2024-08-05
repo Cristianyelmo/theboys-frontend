@@ -4,11 +4,11 @@ import { useState, useEffect, useRef } from "react";
 import { HomeHook } from "../context/HomessContext";
 
 export default function HomeNew() {
-  const [message, setMessage] = useState(false);
-
+  const [logoanimation, setLogoAnimation] = useState(false);
+  const { handleStart, darkness, start, setStar } = HomeHook();
   useEffect(() => {
     const timer = setTimeout(() => {
-      setMessage(true);
+      setLogoAnimation(true);
       const audio2 = new Audio("/sound/metalpunch.mp3");
       audio2.play();
       setStar("block");
@@ -16,7 +16,7 @@ export default function HomeNew() {
     return () => clearTimeout(timer);
   }, []);
 
-  const { handleStart, darkness, start, setStar } = HomeHook();
+
 
   return (
     <div>
@@ -55,13 +55,13 @@ export default function HomeNew() {
           src="/imagen/the-boys-logo.webp"
           width={200}
           height={200}
-          className={`absolute opacity-0 ${message && "my-element6"}`}
+          className={`absolute opacity-0 ${logoanimation && "my-element6"}`}
         />
         <Image
           src="/imagen/the-boys-logo-blur.webp"
           width={200}
           height={200}
-          className={`absolute opacity-0 ${message && "my-element5"}`}
+          className={`absolute opacity-0 ${logoanimation && "my-element5"}`}
         />
       </div>
 
@@ -73,26 +73,7 @@ export default function HomeNew() {
   );
 }
 
-{
-  /* <div className="relative flex flex-col  top-[70%] left-[42%] z-50">
-        <Image
-          src="/imagen/the-boys-logo.webp"
-          width={200}
-          height={200}
-          className={`absolute opacity-0 ${message && "my-element6"}`}
-        />
-        <Image
-          src="/imagen/the-boys-logo-blur.webp"
-          width={200}
-          height={200}
-          className={`absolute opacity-0 ${message && "my-element5"}`}
-        />
-      </div>
 
-      <div onClick={handleStart} className={`relative cursor-pointer flex flex-col  top-[90%] left-[39%] z-50 ${start} ${start  && 'my-element7'}`}>
-        <p className="text-white ">Haz click para comenzar</p>
-      </div> */
-}
 
 
 
