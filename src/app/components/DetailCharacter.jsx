@@ -102,7 +102,7 @@ setObjectanimationserieandcomic({
 <Image src={`/DetailSelected/${characterselected[valueImage].name}4.webp`} width={1200} height={800} className={`absolute   opacity-0  ${objectanimationserieandcomic.animation4}`}/>
 <Image src={`/DetailSelected/${characterselected[valueImage].name}3.webp`} width={1200} height={800} className={`absolute  opacity-0 ${objectanimationserieandcomic.animation3}`}/>
 <Image src={`/DetailSelected/${characterselected[valueImage].name}2.webp`} width={1200} height={800} className={`absolute  opacity-0 ${objectanimationserieandcomic.animation2}`}/>
-<Image src={`/DetailSelected/${characterselected[valueImage].name}.webp`} width={1200} height={800} className={`   ${objectanimationserieandcomic.animation1}`}/>
+<Image src={`/DetailSelected/${characterselected[valueImage].name}_1.webp`} width={1200} height={800} className={`   ${objectanimationserieandcomic.animation1}`}/>
 </div>
 </div>
  
