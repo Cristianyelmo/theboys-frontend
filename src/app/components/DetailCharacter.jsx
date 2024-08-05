@@ -99,9 +99,9 @@ setObjectanimationserieandcomic({
 <div className="flex flex-col ">
 <div className="position-detail-character   flex justify-center lg:absolute lg:bottom-0 lg:right-0 lg:-translate-x-0 overflow-hidden overflow-x-hidden overflow-y-hidden">
 <div className="relative  ">
-<Image src={`/DetailSelected/${characterselected[valueImage].name}4.webp`} width={1200} height={800} className={`absolute   opacity-0  ${objectanimationserieandcomic.animation4}`}/>
-<Image src={`/DetailSelected/${characterselected[valueImage].name}3.webp`} width={1200} height={800} className={`absolute  opacity-0 ${objectanimationserieandcomic.animation3}`}/>
-<Image src={`/DetailSelected/${characterselected[valueImage].name}2.webp`} width={1200} height={800} className={`absolute  opacity-0 ${objectanimationserieandcomic.animation2}`}/>
+<Image src={`/DetailSelected/${characterselected[valueImage].name}_4.webp`} width={1200} height={800} className={`absolute   opacity-0  ${objectanimationserieandcomic.animation4}`}/>
+<Image src={`/DetailSelected/${characterselected[valueImage].name}_3.webp`} width={1200} height={800} className={`absolute  opacity-0 ${objectanimationserieandcomic.animation3}`}/>
+<Image src={`/DetailSelected/${characterselected[valueImage].name}_2.webp`} width={1200} height={800} className={`absolute  opacity-0 ${objectanimationserieandcomic.animation2}`}/>
 <Image src={`/DetailSelected/${characterselected[valueImage].name}_1.webp`} width={1200} height={800} className={`   ${objectanimationserieandcomic.animation1}`}/>
 </div>
 </div>
