@@ -85,7 +85,7 @@ setObjectanimationserieandcomic({
      
 
     </div> 
-    <div className="w-full h-full overflow-hidden">
+    <div className=" overflow-hidden overflow-x-hidden overflow-y-hidden">
     <button onClick={()=>setChangepage('CharacterSelected')} className="bg-black p-2 m-2 text-white">
       volver
    
@@ -97,7 +97,7 @@ setObjectanimationserieandcomic({
 
 
 <div className="flex flex-col ">
-<div className="transform -translate-x-1/2  flex justify-center lg:absolute lg:bottom-0 lg:right-0 lg:-translate-x-0">
+<div className="position-detail-character   flex justify-center lg:absolute lg:bottom-0 lg:right-0 lg:-translate-x-0 overflow-hidden overflow-x-hidden overflow-y-hidden">
 <div className="relative  ">
 <Image src={`/DetailSelected/${characterselected[valueImage].name}4.webp`} width={1200} height={800} className={`absolute   hidden  ${objectanimationserieandcomic.animation4}`}/>
 <Image src={`/DetailSelected/${characterselected[valueImage].name}3.webp`} width={1200} height={800} className={`absolute  hidden ${objectanimationserieandcomic.animation3}`}/>

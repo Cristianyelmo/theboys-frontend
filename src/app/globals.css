@@ -1139,3 +1139,16 @@ opacity: 0;
  
   animation: fontanimatered2 0.3s forwards  ;
 }
+
+
+.position-detail-character {
+  transform: translateX(-50%);
+}
+
+
+@media (max-width: 1024px) {
+  .position-detail-character {
+ 
+    transform: translateX(-25%);
+  }
+}
