@@ -38,7 +38,7 @@ export default function HomeNew() {
   className="absolute z-30 my-element"
 />
         <Image
-  src="/imagen/homelander-0.webp"
+  src="/imagen/homelander-0-1.webp"
   width={1000}
   height={520}
   className="  z-20"
@@ -50,7 +50,7 @@ export default function HomeNew() {
 
 
 
-        <div className="relative flex flex-col  top-[70%] left-[42%] z-50">
+        <div className="relative flex flex-col items-center  top-[70%] z-50">
         <Image
           src="/imagen/the-boys-logo.webp"
           width={200}
@@ -65,7 +65,7 @@ export default function HomeNew() {
         />
       </div>
 
-      <div onClick={handleStart} className={`relative cursor-pointer flex flex-col  top-[90%] left-[39%] z-50 ${start} ${start  && 'my-element7'}`}>
+      <div onClick={handleStart} className={`relative cursor-pointer flex flex-col  items-center top-[90%] z-50 ${start} ${start  && 'my-element7'}`}>
         <p className="text-white ">Haz click para comenzar</p>
       </div>
       </section>
